@@ -1,0 +1,47 @@
+<!DOCTYPE  HTML>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>流程控制语句</title>
+<script type="text/javascript">
+
+ /*第一步把之前的数据写成一个数组的形式,定义变量为 infos*/
+ var infos =[   
+ 				['小A','女',21,'大一'],
+ 				['小B','男',23,'大三'],
+			    ['小C','男',24,'大四'],  
+			    ['小D','女',21,'大一'],
+			   	['小E','女',22,'大四'], 
+			    ['小F','男',21,'大一'],
+			    ['小G','女',22,'大二'], 
+			    ['小H','女',20,'大三'],
+			    ['小I','女',20,'大一'],  
+			    ['小J','男',20,'大三']  
+ 			];
+ 	document.write("总共有"+infos.length+"个学生！<br />");
+ /*第一次筛选，找出都是大一的信息
+ 第二次筛选，找出都是女生的信息*/
+ 	for(i=0;i<infos.length;i++){
+	if(infos[i][3]=="大一"){
+		document.write("其中大一的新生有："+infos[i]+"<br />")
+		
+		}
+	}
+	for(j=0;j<=infos.length;j++){
+	 if(infos[j][1]=="女"&&infos[j][3]=="大一"){
+			document.write("大一其中是女生的有："+infos[j]+"<br />");
+		}
+	}
+/*	var myayy=[];
+	x=0;
+	for (var i=0;i<=infos.length - 1;  i++) {
+		if (infos[i][3]=="大一") {
+			myayy[x]=infos[i];
+			document.write("其中大一的新生有："+myayy[x]+"<br />")；
+		}
+	}*/
+</script>
+</head>
+<body>
+</body>
+</html>

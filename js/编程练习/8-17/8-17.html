@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>浏览器对象</title>  
+  <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>   
+ </head>
+ <body>
+  <h4>操作成功</h4>
+  <p>
+    <span id="seven">5</span>
+    <span>秒后回到主页</span>
+    <a href="javascript:;" onclick="back()">返回</a>
+  </p>
+
+  <script type="text/javascript">  
+   var num=document.getElementById("seven");
+   i=5;
+   //获取显示秒数的元素，通过定时器来更改秒数。
+   function six(){
+       i--;
+       num.innerHTML=i;
+       if(i==1){
+           location.replace("http://www.imooc.com");
+       }
+    }
+    window.setInterval("six()",1000);
+    function back(){
+        window.history.back();
+        // 返回上一个页面
+    }
+   //通过window的location和history对象来控制网页的跳转。
+   //这样就可以操作成功后接着跳转或者返回上一个页面
+ </script> 
+</body>
+</html>

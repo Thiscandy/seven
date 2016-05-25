@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>定时器</title>
+<style type="text/css">
+	.cl{
+		margin: 0 auto;
+		width: 200px;
+	}
+</style>
+<script type="text/javascript">
+  var attime;
+  function clock(){
+    var time=new Date();
+    attime=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+    document.getElementById("clock").value = attime;
+  }
+  var int=setInterval(clock,1000);
+  var atime;
+  var time=new Date();
+  atime=time.getHours()+":"+time.getMinutes()+":"+time.getSeconds();
+
+</script>
+</head>
+<body>
+<form>
+<div class="cl">
+<input type="text" id="clock" size="10"  />
+</div>
+</form>
+</body>
+</html>

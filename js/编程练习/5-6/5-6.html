@@ -1,0 +1,40 @@
+<!DOCTYPE  HTML>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>函数</title>
+
+<script type="text/javascript">
+
+//定义函数
+function app(x,y){
+	if(x>y){
+		return x;
+	}
+	else
+	if(x<y){
+		return y;
+	}
+	else
+	{
+		return '一样大';
+	}
+}
+//函数体，判断两个整数比较的三种情况
+	res1=app(5,4);
+	res2=app(6,3);
+	res3=app(4,5);
+ 	res4=app(3,6);
+ 	res5=app(1,1);
+//调用函数，实现下面两组数中，返回较大值。
+  document.write(" 5 和 4 的较大值是:"+res1+"<br />");
+  document.write(" 6 和 3 的较大值是:" +res2+"<br />"); 
+  document.write("4和5对比："+res3+"<br />");
+  document.write("3和6对比："+res4+"<br />");
+  document.write("1和1对比："+res5+"<br />")
+
+</script>
+</head>
+<body>
+</body>
+</html>
