@@ -1,0 +1,35 @@
+a{color:blue;text-decoration:none;}
+a:hover{text-decoration:underline;}
+body{
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: center;
+  font:1.2em 'Hiragino Sans GB',微软雅黑;
+  color: #999;
+}
+header{
+  padding: 1em 0;
+}
+.san{
+  font-size: 140px;
+  position: relative;
+  top:10px;
+  right: 10px;
+}
+h1{
+  font-size: 4em;
+  color: #222;
+}
+h2{
+  color: #222;
+}
+blockquote{
+  background: #F8F8F8;
+  padding: 0.1em 1em;
+  text-indent: 1em;
+}
+footer{
+  color: #999;
+  padding: 3em 0;
+}
