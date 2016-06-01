@@ -4,7 +4,262 @@
  	<meta charset="utf-8" />
 	<title></title>
 	<link rel="stylesheet" type="text/css">
+	    <style type="text/css">
+        body
+        {
+            padding: 0;
+            font-size: 10pt;
+            behavior:url(css/csshover.htc);
+        }
+        .topmenu
+        {
+            display: block;
+            width: 220px;
+            border: 2px solid #e4393c;
+            margin: 0;
+            padding: 0;
+        }
+        .toptitle
+        {
+            height: 40px;
+            line-height: 40px;
+            text-align: left;
+            font-size: 11pt;
+            font-weight: bold;
+            color: White;
+            background: #e4393c;
+            padding-left: 20px;
+        }
+        .topmenu li
+        {
+            height: 30px;
+            line-height: 30px;
+            font-size: 11pt;
+            list-style-type: none;
+            text-align: left;
+            padding-left: 8px;
+            z-index: 3;
+            background-image: url(1.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .topmenu li a
+        {
+            text-decoration: none;
+            color: #313131;
+        }
+        .topmenu li a:hover
+        {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #e4393c;
+        }
+        .topmenu li:hover
+        {
+
+            border-right: 0;
+            box-shadow: 0 0 8px #DDD;
+            -moz-box-shadow: 0 0 8px #DDD;
+            -webkit-box-shadow: 0 0 8px #DDD;
+            background-image: none;
+        }
+        .submenu
+        {
+            display: none;
+            left: 220px;
+            position: absolute;
+            top: 40px;
+            border: 1px solid #DDD;
+            z-index: 4;
+            background: white;
+            box-shadow: 0 0 8px #DDD;
+            -moz-box-shadow: 0 0 8px #DDD;
+            -webkit-box-shadow: 0 0 8px #DDD;
+        }
+        .leftdiv
+        {
+            float: left;
+            margin: 5px;
+        }
+        .rightdiv
+        {
+            float: left;
+            width: 200px;
+            margin: 5px;
+        }
+        .topmenu li:hover .submenu
+        {
+            display: block;
+        }
+        
+        .topmenu li:hover span
+        {
+            background: white;
+            display: inline-block;
+            z-index: 20;
+            width: 20px;
+            height: 30px;
+            float: right;
+            position: relative;
+        }
+        .leftdiv dl
+        {
+            display: block;
+            border-bottom: 1px solid #EEE;
+            padding-bottom: 6px;
+            overflow: hidden;
+        }
+        .leftdiv dl dt
+        {
+            display: block;
+            float: left;
+            width: 60px;
+            text-align: right;
+            height: 22px;
+            line-height: 22px;
+            padding-right: 6px;
+            color: #e4393c;
+        }
+        .leftdiv dl dd
+        {
+            display: block;
+            overflow: hidden;
+        }
+        .leftdiv dl dd a
+        {
+            display: block;
+            float: left;
+            border-left: 1px solid #CCC;
+            color: #737373;
+            font-size: 9pt;
+            padding: 0 8px;
+            height: 14px;
+            line-height: 14px;
+            margin: 4px 0;
+        }
+        
+        .rightdiv dl dd
+        {
+            margin: 3px 0;
+        }
+        
+        .rightdiv dl dt
+        {
+            color: #e4393c;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        
+        .rightdiv dl dd a
+        {
+            font-size: 9pt;
+            color: #737373;
+            line-height: 22px;
+        }
+        .rightdiv dl dd a:hover
+        {
+            color: #737373;
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
+	<ul class="topmenu">
+        <div class="toptitle">javascript</div>
+        <li>
+        	<a href="https://github.com/Thiscandy/seven/tree/master/js/lianxi">练习</a>
+        	<span></span>
+            <div class="submenu">
+                <div class="leftdiv">
+                    <dl>
+                        <dt>一</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/1-2/1-2.html">1-2</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>二</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/2-4/2-4.html">2-4</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/2-13/2-13.html">2-13</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>三</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/3-8/3-8.html">3-8</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>四</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/4-5/4-5.html">4-5</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/4-7/4-7.html">4-7</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/4-10/4-10.html">4-10</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>五</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/5-6/5-6.html">5-6</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/5-16.html">5-16</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>六</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/6-11/6-11.html">6-11</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/6-11/6-11-1.html">6-11-1</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>七</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/7-8/7-8.html">7-8</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/7-23/7-23.html">7-23</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>八</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-3-23/8-3.html">8-3</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-6/8-6.html">8-6</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-8/8-8.html">8-8</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-12/8-12.html">8-12</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-13/8-13.html">8-13</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/8-17/8-17.html">8-17</a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>九</dt>
+                        <dd>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/9-3/9-3.html">9-3</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/9-4/9-4.html">9-4</a>
+                            <a href="http://thiscandy.github.io/seven/js/lianxi/9-6/9-6.html">9-6</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+        <li>
+        	<a href="https://github.com/Thiscandy/seven/tree/master/js/%E5%80%92%E8%AE%A1%E6%97%B6%E6%95%88%E6%9E%9C">倒计时效果</a>
+        	<span></span>
+            <div class="submenu">
+                <div class="leftdiv">
+                    <dl>
+                        <dd>
+                            <dt><a href="#">1-5</a></dt>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </li>
+        <li>
+        	<a href="https://github.com/Thiscandy/seven/tree/master/js/%E5%95%86%E5%9F%8E%E5%88%86%E7%B1%BB%E5%AF%BC%E8%88%AA">商城分类导航</a>
+        </li>
+        <li>
+        	<a href="https://github.com/Thiscandy/seven/tree/master/js/%E4%BF%A1%E6%81%AF%E6%BB%9A%E5%8A%A8%E6%95%88%E6%9E%9C">信息滚动效果</a>
+        </li>
+    </ul>
 </body>
 </html>
