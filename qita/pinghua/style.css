@@ -78,6 +78,7 @@ a
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
+/*给标签定义位置*/
 #st-control-1,#st-control-1+a
 {
 	left: 0%;
@@ -152,6 +153,7 @@ a
 	background: #fff;
 	overflow: hidden;
 }
+
 #st-control-1:checked~.st-scrol1
 {
 	-webkit-transform:translateY(0%);
