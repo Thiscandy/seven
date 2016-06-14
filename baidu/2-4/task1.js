@@ -9,24 +9,28 @@
 var aqiData = {};
 var cityInput = document.getElementById("aqi-city-input");
 var aqiInput = document.getElementById("aqi-value-input");
-
 /**
  * 从用户输入中获取数据，向aqiData中增加一条数据
  * 然后渲染aqi-list列表，增加新增的数据
  */
-function addAqiData() {
-    var city = cityInput.value.trim();
-    var aqi = aqiInput.value.trim();
 
-    if(!city.match(/^[A-Za-z\u4E00-\u9FA5]+$/)){
-        alert("城市名必须为中英文字符！")
-        return;
-    }
-    if(!aqi.match(/^\d+$/)) {
-        alert("空气质量指数必须为整数！")
-        return;
-    }
-    aqiData[city] = aqi;
+function addAqiData() {
+	var city=cityInput.value.trim();
+	var aqi=aqiInput.value.trim();
+	/*name.value.trim()  去掉字符串首尾空格*/
+	if (!city.match(/^[A-Za-z\u4E00-\u9FA5]+$/)) {
+		alert("城市必须为中文字符！");
+		return;
+	}
+	if (!aqi.match(/^\d+$/)) {
+		alert("空气质量必须为整数！");
+		return;
+	}
+	/*
+		！name.match(正则表达式);
+		match()可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配
+	*/
+	aqiData[city]=aqi;
 }
 
 /**
