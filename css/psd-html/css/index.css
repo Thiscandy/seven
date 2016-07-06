@@ -37,6 +37,7 @@
 	width: 40px;
 	border-top: 1px solid #fff;
 	vertical-align: middle;
+	*margin-top: 22px;
 }
 
 .index-banner-text .text-info .txt {
@@ -152,7 +153,7 @@
 
 .index-panel-header .line {
 	float: left;
-	margin-top: 7px;
+	margin-top: 10px;
 	width: 200px;
 	border-top: 1px solid #e5e3e3;
 }
@@ -220,6 +221,26 @@
 }
 
 .food-item .nostar {
-	background-position: 0 -13px;
+	background-position: 0 -12px;
 }
 
+.index-pics {
+	height: 380px;
+	overflow: hidden;
+}
+
+.index-pics .pic-col {
+	float: left;
+}
+
+.index-pics .pic-col-m {
+	width: 353px;
+}
+
+.index-pics .pic-col-s {
+	width: 287px;
+}
+
+.index-pics .pic-col-l {
+	width: 460px;
+}
