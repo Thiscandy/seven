@@ -73,7 +73,7 @@ a
 	z-index: 10;
 	font-weight: 700;
 	font-size: 16px;
-	background: #e23a6b;
+	background: #7EC0EE;
 	text-align: center;
 	color: #fff;
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
@@ -101,7 +101,7 @@ a
 }
 .st-container input:checked+a,.st-container input:checked:hover+a
 {
-	background: #821134;
+	background: #7D9EC0;
 }
 /*用checked来找点击的选项，后被选中的input里的a样式背景加以改变*/
 .st-container input:checked+a:after
@@ -111,7 +111,7 @@ a
 	height: 0;
 	overflow: hidden;
 	border: 20px solid transparent;
-	border-bottom-color: #821134;
+	border-bottom-color: #7D9EC0;
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
@@ -119,7 +119,7 @@ a
 }
 .st-container input:hover+a
 {
-	background: #ad244f;
+	background: #87CEFF;
 }
 /* 内容 begin */
 .st-scrol1,.st-panel
@@ -198,7 +198,7 @@ a
 {
 	width: 200px;
 	height: 200px;
-	background: #fa96b5;
+	background: #87CEFA;
 	position: absolute;
 	left: 50%;
 	top:0;
@@ -231,7 +231,7 @@ a
 	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
 }
 .st-panel h2{
-	color: #e23a6e;
+	color: #87CEFA;
 	font-size: 54px;
 	line-height: 50px;
 	text-align: center;
@@ -372,13 +372,13 @@ a
 	}
 }
 .st-color{
-	background: #fa96b5;
+	background: #87CEFA;
 }
 .st-color .st-desc{
 	background: #fff;
 }
 .st-color [data-icon]:after{
-	color: #fa96b5;
+	color: #87CEFA;
 }
 .st-color h2{
 	color: #fff;

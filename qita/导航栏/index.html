@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>导航栏制作</title>
+	<style>
+		
+		ul { margin: 0;padding: 0; }
+		a { text-decoration: none;color: white; }
+		li { list-style-type: none; }
+		nav { background:#25383c;text-align: center;height: 30px;line-height: 30px; }
+		.item { color: white;float: left;width: 25%;width: calc(100%/4);display: inline-block;position: relative; }
+		.item a { display: block; }
+		.clearfix { display: block;clear: both; }
+		.list { max-width: 1280px;margin: 0 auto; }
+
+		.u_list { background: #25383c;text-align: center;display: none; position: absolute;left: 0;top:100%; }
+		.u_item { width: 100%; }
+		.item:hover > ul { display: block; }
+		
+
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="list">
+			<li class="item"><a href="#">Item1</a></li>
+			<li class="item"><a href="#">Item2</a></li>
+			<li class="item">
+				<a href="#">Item3</a>
+				<ul class="u_list">
+					<li class="u_item"><a href="#">SubItem1</a></li>
+					<li class="u_item"><a href="#">SubItem2</a></li>
+					<li class="u_item"><a href="#">SubItem3</a></li>
+					<li class="u_item"><a href="#">SubItem4</a></li>
+				</ul>
+			</li>
+			<li class="item"><a href="#">Item4</a></li>
+			<li class="clearfix"></li><!-- 用于清除浮动，撑开父容器 -->
+		</ul>
+	</nav>
+</body>
+</html>
